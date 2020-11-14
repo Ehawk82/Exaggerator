@@ -10,15 +10,13 @@ function exaggerate(incoming_word){
 				 focused_letter = incoming_word[i].toLowerCase();
 			} else {
 				 focused_letter = incoming_word[i].toUpperCase();
-				 
 			}
 			myArray.push(focused_letter);
-if (myArray.length === incoming_word.length) {
-	outgoing_word = myArray.join("");
-
-	console.log(outgoing_word);
-}
-
+			if (myArray.length === incoming_word.length) {
+				outgoing_word = myArray.join("");
+//callback here?
+				console.log(outgoing_word);
+			}
 		}
 		myFunction();
 	}
